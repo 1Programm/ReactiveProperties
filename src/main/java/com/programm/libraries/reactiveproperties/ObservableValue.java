@@ -2,18 +2,20 @@ package com.programm.libraries.reactiveproperties;
 
 import com.programm.libraries.reactiveproperties.core.ObservableBool;
 
-public interface ObservableValue <T> {
+public interface ObservableValue<T>
+{
 
-    T get();
+  T get();
 
-    void addListener(ChangeListener listener);
+  void addListener(ChangeListener listener);
 
-    void removeListener(ChangeListener listener);
+  void removeListener(ChangeListener listener);
 
-    void addWeakListener(ChangeListener listener);
+  void addWeakListener(ChangeListener listener);
 
-    default ObservableBool equalTo(T value){
-        return null;
-    }
+  default ObservableBool equalTo(T value)
+  {
+    return null;
+  }
 
 }

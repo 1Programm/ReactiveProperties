@@ -1,24 +1,30 @@
 package com.programm.libraries.reactiveproperties.core;
 
-public class BoolValueProperty extends BoolProperty{
+public class BoolValueProperty extends BoolProperty
+{
 
-    private boolean value;
+  private boolean value;
 
-    public BoolValueProperty() {
-        this(false);
-    }
+  public BoolValueProperty()
+  {
+    this(false);
+  }
 
-    public BoolValueProperty(boolean value) {
-        this.value = value;
-    }
+  public BoolValueProperty(boolean value)
+  {
+    this.value = value;
+  }
 
-    @Override
-    public Boolean get() {
-        return value;
-    }
+  @Override
+  public Boolean get()
+  {
+    return value;
+  }
 
-    @Override
-    protected void setDirectly(Boolean value) {
-        this.value = value;
-    }
+  @Override
+  protected void setDirectly(Boolean value)
+  {
+    this.value = value;
+  }
+
 }
